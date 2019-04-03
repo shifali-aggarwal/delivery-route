@@ -1,0 +1,9 @@
+img {
+  width: 260px;
+  height: 260px;
+}
+
+.carousel img {
+  height: 400px;
+}
+
