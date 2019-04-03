@@ -1,0 +1,14 @@
+<div class="row-separator"></div>
+<h3 class="text-center">Category</h3>
+<br>
+<div class="row justify-content-md-center">
+  <div class="col-sm-3" *ngFor="let prod of products">
+      <div class="card">
+          <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img18/apparel/GW/Desktop_Exp/260x260-GW-Exp-3._CB453991672_SY260_.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">{{prod.title}}</p>
+          </div>
+          <button type="button" class="btn btn-primary" (click)="viewProd(prod.sku)">View Product</button>
+      </div>
+  </div>
+</div>
